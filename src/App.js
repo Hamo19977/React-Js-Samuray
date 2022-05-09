@@ -1,15 +1,16 @@
 import './App.css';
-import Technologies from "./Components/Technologies";
 import Header from "./Components/Header";
+import Nav from "./Components/Nav";
+import Content from "./Components/Content";
 
 function App() {
-  return (
-    <div className="App">
-      <Header/>
-      <Technologies/>
-
-    </div>
-  );
+    return (
+        <div className="app-wrapper">
+            <Header/>
+            <Nav/>
+            <Content/>
+        </div>
+    );
 }
 
 export default App;

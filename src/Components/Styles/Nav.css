@@ -1,0 +1,6 @@
+.nav {
+    grid-area: n;
+    margin: 4px;
+    background-color: antiquewhite;
+    height: 600px;
+}
