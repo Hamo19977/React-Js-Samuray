@@ -127,6 +127,10 @@
 // console. log(Object.getPrototypeOf(obj) === Foo.prototype,   Foo.prototype ) ;
 // console. log (Object.getPrototypeOf(Foo) === Function.prototype,   Function.prototype );
 // console. log (Object.getPrototypeOf(Function.prototype) === Object.prototype, Object.prototype );
+//
+// console.log(Object.getPrototypeOf(obj) === Foo.prototype);
+// console.log(Object.getPrototypeOf(Foo) === Function.prototype);
+// console.log(Object.getPrototypeOf(Function.prototype) === Object);
 
 // const person = {
 //     name: 'Lydia Hallie',
@@ -189,8 +193,8 @@
 //     var name = 'Alice';
 //     print1();
 // }
-// var name = 'Bob';
 // print1();
+// var name = 'Bob';
 // print2();
 //     2. 'Bob', 'Bob',
 
@@ -202,9 +206,16 @@
 //     return item;
 // })(item);
 // console.log(item);
-
-// pen pen
-
+//
+// // pen pen
+//
+// // let item = 'pen';
+// (function foo(){
+//     console.log(item);
+//     item = 'book'
+//     return item;
+// }) (item);
+// console.log(item);
 
 // let name = 'book';
 // const item = {
@@ -213,7 +224,6 @@
 //         return this.name;
 //     },
 //     getName2: () => {
-//
 //         var name = 'pencil';
 //         return this.name;
 //     }
@@ -342,7 +352,7 @@
 //     { id: 6, name: 'David' },
 //     { id: 7, name: 'Charlie' },
 // ];
-
+//
 // const foo = (array, key) => {
 //     let  result =  []
 //     let check = []
@@ -382,8 +392,8 @@
 // foo((val = 'amqp') => {
 //     console.log(val);
 // })
-//
-// // http
+
+// http
 
 
 // function print1(){
@@ -408,6 +418,15 @@
 // console.log(item);
 
 // pen boook
+
+// let item = 'pen';
+// (function foo(item){
+//     console.log(item);
+//     item = 'book';
+//     return item;
+// })(item);
+// console.log(item);
+
 
 // const obj = {
 //     name: 'Bob',
@@ -487,8 +506,8 @@
 //     setTimeout(() => resolve('a'));
 //     reject('b');
 // })
-// promise
-//     .then(result => {console.log(result);
+//
+// promise.then(result => {console.log(result);
 //         return 'c';
 //     })
 //     .catch(error => {
@@ -514,15 +533,15 @@
 // 1
 
 
-const data = [
-    { id: 1, name: 'Alice' },
-    { id: 2, name: 'Bob' },
-    { id: 3, name: 'Charlie' },
-    { id: 4, name: 'Bob' },
-    { id: 5, name: 'Alice' },
-    { id: 6, name: 'David' },
-    { id: 7, name: 'Charlie' },
-];
+// const data = [
+//     { id: 1, name: 'Alice' },
+//     { id: 2, name: 'Bob' },
+//     { id: 3, name: 'Charlie' },
+//     { id: 4, name: 'Bob' },
+//     { id: 5, name: 'Alice' },
+//     { id: 6, name: 'David' },
+//     { id: 7, name: 'Charlie' },
+// ];
 
 
 // const uniqueObj = (array, key) =>{
@@ -540,3 +559,4 @@ const data = [
 // }
 //
 // console.log(uniqueObj(data, 'name'))
+

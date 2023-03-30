@@ -1,24 +1,24 @@
-// const  replaceSpacesWithCommas = (str) => {
-//     return str.split(' ').filter((el, index, array) => {
-//
-//         if(el.trim().length === 0){
-//             return !!(index === 0 || index === array.length - 1);
-//         } else return true
-//
-//     }).map((el, index, array) => {
-//         if (el.trim().length === 0 || index === array.length -1) {
-//             return el
-//         }
-//         if (index === array.length -2 && array[index + 1].trim().length === 0) return el
-//         return el += ','
-//     }).join(' ')
-// }
-//
-// // Examples
-// console.log(replaceSpacesWithCommas(' My name is Arman '))
-// // --> ' My,name,is,Arman ')
-// console.log(replaceSpacesWithCommas('I am   a cat'))
-// // --> 'I,am,a,cat')
+const  replaceSpacesWithCommas = (str) => {
+    return str.split(' ').filter((el, index, array) => {
+
+        if(el.trim().length === 0){
+            return !!(index === 0 || index === array.length - 1);
+        } else return true
+
+    }).map((el, index, array) => {
+        if (el.trim().length === 0 || index === array.length -1) {
+            return el
+        }
+        if (index === array.length -2 && array[index + 1].trim().length === 0) return el
+        return el += ','
+    }).join(' ')
+}
+
+// Examples
+console.log(replaceSpacesWithCommas(' My name is Arman '))
+// --> ' My,name,is,Arman ')
+console.log(replaceSpacesWithCommas('I am   a cat'))
+// --> 'I,am,a,cat')
 
 
 ///2
@@ -32,7 +32,7 @@
 //     { id: 6, name: 'David' },
 //     { id: 7, name: 'Charlie' },
 // ];
-
+//
 // const foo = (array, key) => {
 //     let  result =  []
 //     let check = []
