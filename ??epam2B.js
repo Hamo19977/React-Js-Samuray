@@ -185,4 +185,24 @@
 //     3. [],
 //     4. 4,  +
 
+// const products = [
+//     {name: 'Product 1', price: 10, quantity: 5},
+//     {name: 'Product 2', price: 20, quantity: 3},
+//     {name: 'Product 3', price: 5, quantity: 10},
+// ];
+
+// function calculateProductStats(products) {
+//     const totalProducts = products.length;
+//     const totalValue = products.reduce((total, product) => total + product.price * product.quantity, 0);
+//     const averagePrice = totalValue / totalProducts;
+//
+//     return {
+//         totalProducts: totalProducts,
+//         totalValue: totalValue,
+//         averagePrice: parseFloat(averagePrice.toFixed(2))
+//     };
+// }
+//
+// console.log(calculateProductStats(products))
+
 
