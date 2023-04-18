@@ -11,7 +11,7 @@
 // 1. 0, 1, 2 and SyntaxError: Identifier 'i' has already been declared
 // 2. 3, 3, 3 and 3, 3, 3,
 //     3. 0, 1, 2 and 0, 1, 2,
-//     4. 3, 3, 3 and 0, 1, 2,  +
+//     4. 3, 3, 3 and 0, 1, 2,
 
 // function add(x, y) {
 //     return function(y) {
@@ -23,7 +23,7 @@
 // temaaa
 // 1. 5,
 //     2. function(y) { return x + y; },
-// 3. NaN  +
+// 3. NaN
 // 4. ReferenceError: 'y' is not defined,
 
 
@@ -43,7 +43,7 @@
 // console.log(x);
 // 1. 10, 30,
 //     2. 10, 20,
-//     3. 20, 30  +
+//     3. 20, 30
 // 4. 20, 20,
 
 
@@ -54,7 +54,7 @@
 //     console.log(x);
 // })();
 // 1. 10, 20,
-//     2. undefined, 20,  +
+//     2. undefined, 20,
 //     3. 20, 20,
 //     4. ReferenceError: 'x' is not defined,
 
@@ -76,7 +76,7 @@
 // 1. true, true, true, false
 // 2. false, false, false, true
 // 3. false, true, true, false
-// 4. false, false, true, false  +
+// 4. false, false, true, false
 
 
 // const a = {};
@@ -88,7 +88,7 @@
 
 
 // 1. 123,
-//     2. 456 +
+//     2. 456
 // 3. { key: 'b' },
 // 4. 'b',
 
@@ -111,7 +111,7 @@
 // 1. 'pencil', 'pencil',
 //     2. 'pen', 'pen',
 //     3. 'pencil', undefined,
-//     4. 'pen', undefined, +
+//     4. 'pen', undefined,
 
 
 // class Vehicle {
@@ -123,7 +123,7 @@
 // console.log(Object.getPrototypeOf(car) === Vehicle.prototype);
 // console.log(Object.getPrototypeOf(car) === Object.getPrototypeOf(Vehicle));
 // console.log(Object.getPrototypeOf(car) === Function.prototype);
-// 1. true, false, false, +
+// 1. true, false, false,
 //     2. true, true, false,
 //     3. true, false, true,
 //     4. false, false, true,
@@ -152,7 +152,7 @@
 
 
 // 1. 'human', 'Alice', 'Alice', undefined,
-//     2. undefined, 'Alice', 'Alice', 'human'  +
+//     2. undefined, 'Alice', 'Alice', 'human'
 // 3. undefined, 'Alice', undefined, 'human'
 // 4. undefined, 'Alice', undefined, undefined
 
@@ -176,7 +176,7 @@
 // 1. 20, 15,
 //     2. 20,
 //     3. 10, 5,
-//     4. 10, 5, 15,  +
+//     4. 10, 5, 15,
 
 
 
@@ -185,7 +185,7 @@
 // const promise3 = new Promise(r => setTimeout(r, 10, new Error('2').message));
 // const promise4 = new Promise(r => setTimeout(r, 10, '3'));
 // Promise
-//     .all([promise1, promise2, promise3, promise4])
+//     .all([promise1, promise3, promise4])
 //     .then(result => console.log(result))
 //     .catch(error => console.log(error));
 // 1. ['1', '3'],
@@ -194,15 +194,14 @@
 // 4. Error: 2 at Object.<anonymous> + is not defined
 
 
-// const sortObjectsById = (objects) => objects.slice().sort((a, b) => a.id - b.id);
-//
-//
-// const objects = [
-//     { id: 3, name: "Alice" },
-//     { id: 1, name: "Bob" },
-//     { id: 2, name: "Charlie" },
-//     { id: 77, name: "Charlie" },
-//     { id: 74, name: "Charlie" },
-// ];
-//
-// console.log(sortObjectsById(objects))
+const sortObjectsById = objects => objects.sort((a, b) => a.id - b.id);
+
+
+const objects = [
+    { id: 3, name: "Alice" },
+    { id: 1, name: "Bob" },
+    { id: 2, name: "Charlie" },
+    { id: 77, name: "Charlie" },
+    { id: 74, name: "Charlie" },
+];
+console.log(sortObjectsById(objects))

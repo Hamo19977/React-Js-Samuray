@@ -1,5 +1,4 @@
 // for (var i = 0; i < 3; i++) {
-//     console.log(i, 'var')
 //     setTimeout(() => console.log(i));
 // }
 // for (let i = 0; i < 3; i++) {
@@ -7,7 +6,7 @@
 // }
 // 1. 0, 1, 2 and SyntaxError: Identifier 'i' has already been declared
 // 2. 3, 3, 3 and 3, 3, 3
-// 3. 3, 3, 3 and 0, 1, 2 +
+// 3. 3, 3, 3 and 0, 1, 2
 // 4. 0, 1, 2 and 0, 1, 2
 
 // function foo(cb) {
@@ -18,7 +17,7 @@
 // })
 // 1. 'hello',
 //     2. undefined,
-//     3. 'bye', +
+//     3. 'bye',
 //     4. null,
 
 
@@ -32,7 +31,7 @@
 // }
 // print2();
 // print1();
-// 1. ReferenceError: name is not defined, +
+// 1. ReferenceError: name is not defined,
 //     2. 'Alice', ReferenceError: name is not defined,
 //     3. 'Alice', 'Alice',
 //     4. 'Alice', undefined,
@@ -50,7 +49,7 @@
 // 1. 'pen', 'book',
 //     2. 'pen', 'pen',
 //     3. undefined, 'book',
-//     4. undefined, 'pen', +
+//     4. undefined, 'pen',
 
 
 // const obj = {
@@ -62,7 +61,7 @@
 // console.log(group[0] === obj);
 // 1. false, true, true,
 //     2. false, true, false,
-//     3. false, false, true, +
+//     3. false, false, true,
 //     4. true, false, false,
 
 // const a = {};
@@ -70,13 +69,12 @@
 // const c = { key: 'c' };
 // a[b] = 123;
 // a[c] = 456;
-// console.log(a[b]);
+// console.log(a[{}]);
 // // 1. 123,
 // //     2. 'b',
 // //     3. { key: 'b' },
-// // 4. 456, +
+// // 4. 456,
 // // Temaaa
-
 
 
 // const item = {
@@ -93,7 +91,7 @@
 // console.log(item.getName2());
 // 1. 'pen', 'pen',
 //     2. 'pencil', 'pencil',
-//     3. 'pen', undefined, +
+//     3. 'pen', undefined,
 //     4. 'pencil', undefined,
 
 
@@ -109,7 +107,7 @@
 // 1. true, false, true,
 //     2. false, false, true,
 //     3. true, true, true,
-//     4. false, false, false, +
+//     4. false, false, false,
 
 
 
@@ -132,7 +130,7 @@
 // console.log(employee.getName1());
 // console.log(employee.getName2());
 // 1. TypeError: employee.id is not defined,
-//     2. undefined, 'Bob', 'Bob', TypeError: employee.getName2 is not function, +
+//     2. undefined, 'Bob', 'Bob', TypeError: employee.getName2 is not function,
 // 3. undefined, 'Bob', 'Bob', undefined,
 //     4. undefined, 'Bob', undefined, undefined,
 //     5. 5, 'Bob', 'Bob', 'Bob',
@@ -156,7 +154,7 @@
 // 1. 1,
 //     2. 1, 4,
 //     3. 3,
-//     4. 3, 2, +
+//     4. 3, 2,
 
 
 
@@ -174,7 +172,7 @@
 
 // 1. [2],
 //     2. [2,3],
-//     3. 1, +
+//     3. 1,
 //     4. 4,
 
 
@@ -197,7 +195,6 @@
 // const arr4 = ['pear', 'mear']
 //
 // const filterTwoArrays = (arr1,arr2) => arr1.filter((item) => arr2.includes(item)) ?? []
-//
 //
 // console.log(filterTwoArrays(arr1,arr2))
 // console.log(filterTwoArrays(arr3,arr4))

@@ -8,7 +8,7 @@
 // 1. ReferenceError: x is not defined,
 //     2. undefined, undefined,
 //     3. 1, undefined,
-//     4. 1, 1,   +
+//     4. 1, 1,
 
 // const person = { name: 'John' };
 // const sayHi = (name) => this.name;
@@ -18,7 +18,7 @@
 //     2. 'Lily', undefined,
 //     3. 'John', 'John',
 //     4. 'John', undefined,
-//     5. undefined, undefined +
+//     5. undefined, undefined
 
 // function print1(){
 //     var name = 'Alice';
@@ -34,13 +34,13 @@
 //     2. 'Alice', ReferenceError: name is not defined,
 //     3. 'Alice', 'Alice',
 //     4. 'Alice, 'undefined',
-// 5. undefined', undefined, +
+// 5. undefined', undefined,
 
 // let result =
 //     [1, 2, NaN, {}, '', [], '0'].filter(item => item);
 // console.log(result);
 // 1. [1, 2, NaN, {}, '', [], '0'],
-//     2. [1, 2, {}, [], '0'],  +
+//     2. [1, 2, {}, [], '0'],
 //     3. [1, 2, '0'],
 //     4. [true, true, false, false, false, false, true],
 
@@ -61,7 +61,7 @@
 // bar1.call(obj2);
 // bar2.call(obj2);
 // 1. undefined, 3,
-//     2. undefined, 2,  +
+//     2. undefined, 2,
 //     3. undefined, undefined,
 //     4. 3, 3,
 
@@ -72,6 +72,7 @@
 // }
 // const updateUser = ({ email, password }) => {
 //     if (email) {
+//
 //         Object.assign(user, { email });
 //     }
 //     if (password) {
@@ -82,7 +83,7 @@
 // const updatedUser = updateUser({ email: 'a@mail.com' });
 // console.log(updatedUser === user);
 // console.log(updatedUser.email);
-// 1. true, 'a@mail.com', +
+// 1. true, 'a@mail.com',
 //     2. true, 'b@mail.com',
 //     3. false, 'a@mail.com',
 //     4. false, 'b@mail.com',
@@ -98,7 +99,7 @@
 // console.log(list instanceof Function);
 // console.log(list instanceof List);
 // console.log(list instanceof Array);
-// 1. true, false, true, true,  +
+// 1. true, false, true, true,
 //
 //     2. false, false, true, true,
 //     3. true, false, false, false,
@@ -122,7 +123,7 @@
 // console.log(employee.hasOwnProperty('name'));
 // console.log(employee.hasOwnProperty('getName1'));
 // console.log(employee.hasOwnProperty('getName2'));
-// 1. false, true, true, false, +
+// 1. false, true, true, false,
 //     2. false, true, false, true,
 //     3. true, true, true, true,
 //     4. false, true, true, true,
@@ -135,7 +136,7 @@
 //     console.log(2);
 // })();
 // console.log('end');
-// 1. 'start', 1, 2, 'end',  +
+// 1. 'start', 1, 2, 'end',
 //     2. 'start', 'end' 1, 2,
 //     3. 'start', 1, 'end', 2,
 //     4. 'start', 1, 2, 'end',
@@ -159,7 +160,7 @@
 // 1. 2, 4
 // 2. 2,
 //     3. 1,
-//     4. 1, 4,  +
+//     4. 1, 4,
 
 
 // const promise1 = new Promise(r => setTimeout(r, 10, 1));
@@ -170,7 +171,7 @@
 //     .all([promise1, promise2, promise3, promise4])
 //     .then(result => console.log(result))
 //     .catch(error => console.log(error));
-// 1. 4,  +
+// 1. 4,
 //     2. [1,2,3],
 //     3. [],
 //     4. [1,2],
@@ -178,8 +179,8 @@
 // foo("The quick brown fox jumps over the lazy dog"));
 
 
-const text = "Theaaaaaaaaa quicka brownaaa  jumpsaaaa over the lazy dog";
+const text = "theaaaaaaaaa quicka brownaaa  jumpsaaaa over the lazy dog";
 
-const  longest = (strings) => strings.split(' ').reduce((acc, curr) => acc > curr.length ? acc : curr.length, strings[0].length);
+const  longest = (strings) => strings.split(' ').reduce((acc, curr) => acc > curr.length ? acc : curr.length, 0);
 
 console.log(longest(text))

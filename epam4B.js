@@ -9,15 +9,15 @@
 // 1. ReferenceError: Cannot access 'x' before initialization
 // 2. undefined, 10,
 //     3. undefined, 20,
-//     4. undefined, undefined,  +
+//     4. undefined, undefined,
 
 
 // const user = { name: 'John', age: 27 };
 // const admin = { admin: true, ...user };
-// console.log(admin.user); age/ name have
+// console.log(admin.user);
 // user.age = 10;
 // console.log(admin.user);
-// 1. undefined, undefined,  +
+// 1. undefined, undefined,
 //     2. { name: 'John', age: 27 } and { name: 'John', age: 27 };
 // 3. { name: 'John', age: 27 } and { name: 'John', age: 10 };
 // 4. null, null,
@@ -37,7 +37,7 @@
 //     2. undefined, undefined,
 //     3. undefined, '1',
 //     4. undefined, '2',
-//     5. '2', '2',  +
+//     5. '2', '2',
 
 
 // let k = 'pen';
@@ -48,7 +48,7 @@
 // })(k);
 // console.log(k);
 
-// 1. 'pen', 'pen',  +
+// 1. 'pen', 'pen',
 //     2. 'pen', 'book',
 //     3. undefined, 'book',
 //     4. undefined, 'pen',
@@ -70,7 +70,7 @@
 // console.log(obj1.getName2.call(obj2));
 // 1. 'pen', 'pen', 'book', 'book',
 //     2. 'pen', undefined, 'book', 'book',
-//     3. 'pen', undefined, 'book', undefined,  +
+//     3. 'pen', undefined, 'book', undefined,
 //     4. 'pen', 'pen', undefined, undefined,
 
 
@@ -87,7 +87,7 @@
 
 // temaa
 // 1. false, false, false,
-//     2. true, true, false, +
+//     2. true, true, false,
 //     3. false, true, false,
 //     4. true, false, false,
 
@@ -100,7 +100,7 @@
 // }
 // const mercedes = new Car('Mercedes', 'V8');
 // console.log(mercedes);
-// 1. {},  +
+// 1. {},
 // 2. { model: 'Mercedes', engine: 'V8' },
 // 3. { model: 'Mercedes', engine: 'V8', releaseDate: 2020 },
 // 4. TypeError: Car is not a constructor,
@@ -122,20 +122,20 @@
 // console.log(employee.hasOwnProperty('getName'));
 //
 // vorovhetev class a ete object liner ok er haswone
-// 1. 'Alice', false, 'Bob', false,  +
-//     2. 'Alice', true, 'Bob', true,  +
+// 1. 'Alice', false, 'Bob', false,
+//     2. 'Alice', true, 'Bob', true,
 //     3. 'Alice', true, undefined, false,
 //     4. 'Alice', false, undefined, false,
 
 
 // console.log('start');
 // (async () => {
-//     console.log(1);
 //     await new Promise(res => setTimeout(res, 1000));
+//     console.log(1);
 // })();
 // console.log('end');
 
-// 1. 'start', 1, 'end',  +
+// 1. 'start', 1, 'end',
 //     2. 'start', 'end' 1,
 //     3. 1, 'start', 'end',
 //     4. 1, 'end', 'start'
@@ -158,7 +158,7 @@
 //         console.log(result);
 //     });
 // 1. 1, 3,
-//     2. 1, 3, 4,  +
+//     2. 1, 3, 4,
 //     3. 2,
 //     4. 2, 4,
 
@@ -176,15 +176,13 @@
 
 // 1. 1,
 //     2. 2,
-//     3. 3,  +
+//     3. 3,
 //     4. 4
 
 // const foo = (string) => string.trim().split(" ").reverse().join(' ')
-
+//
 // console.log(11, foo("The quick brown fox jumps over the lazy dog"),111);
-// Output: "dog lazy the over jumps fox brown quick The"
-
-
+// // Output: "dog lazy the over jumps fox brown quick The"
 
 
 

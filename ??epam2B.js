@@ -64,8 +64,8 @@
 // console.log(item.getName2.call({ name: 'book' }));
 // 1. 'pen', 'pen', 'book', 'book',
 //     2. 'pen', 'pen', 'book', undefined,
-// 3. 'pen', undefined, 'book', 'book',  +
-//     4. 'pen', undefined, 'book', undefined,
+// 3. 'pen', undefined, 'book', 'book',
+//     4. 'pen', undefined, 'book', undefined, +
 //     5. 'pen', undefined, undefined, undefined,
 
 
@@ -206,3 +206,15 @@
 // console.log(calculateProductStats(products))
 
 
+// const promise1 = new Promise(resolve => setTimeout(resolve, 10, 1));
+// const promise2 = new Promise((_, reject) => setTimeout(reject, 20, 2));
+// const promise3 = new Promise(resolve => setTimeout(resolve, 30, 3));
+// const promise4 = new Promise((_, reject) => setTimeout(reject, 40, 4));
+// const promises = [promise1, promise2, promise3, promise4];
+// Promise.race(promises)
+//     .then(result => console.log(result))
+//     .catch(error => console.log(error));
+// 1. 1,
+//     2. 2,
+//     3. [1, 4],
+//     4. [2, 3],

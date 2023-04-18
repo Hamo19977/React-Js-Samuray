@@ -185,8 +185,10 @@
 //     3. [3,4,1,2],
 //     4. []
 
-const text = "The quicka brownaa fww jumps over taaaa lazy dogaaaa";
+// const text = "Thequicka brownaa fwwjumps a";
+//
+// let shortest = (text) => text.split(" ").reduce((acc, curr) => curr.length < acc ? curr.length : acc, text.split(" ")[0].length);
+//
+// console.log( shortest(text))
 
-let shortest = (text) => text.split(' ').reduce((acc, curr) => acc < curr.length ? acc : curr.length, text[0].length);
 
-console.log( shortest(text))

@@ -7,7 +7,7 @@
 // var x;
 
 // 1. ReferenceError: Cannot access 'x' before initialization,
-//     2. 20, undefined, 20, 10, +
+//     2. 20, undefined, 20, 10,
 //     3. undefined, undefined, undefined, 10,
 //     4. 20, 10, 20, 10,
 
@@ -60,10 +60,10 @@
 //     },
 // };
 // Object.freeze(person);
-// // Tema - Object Freez
+// // // Tema - Object Freez
 // person.name = 'Evan Bacon'
 // delete person.address
-// person.address.street = '101 Main St' +
+// person.address.street = '101 Main St'
 // person.pet = { name: 'Whiskey' }
 // console.log(person)
 
@@ -82,7 +82,7 @@
 // console.log(person.hobbies);
 // 1. ['coding'],
 //     2. ['coding', 'dancing'],
-//     3. ['coding', 'dancing', 'baking'], +
+//     3. ['coding', 'dancing', 'baking'],
 //     4. ['coding', 'running', 'dancing', 'baking'],
 
 
@@ -99,7 +99,7 @@
 // 1. 'Michael', undefined,
 //     2. 'Michael', 'Michael Jackson', undefined,
 //     3. 'Michael', undefined, 'Michael Jackson',
-//     4. TypeError: Bar is not a constructor, +
+//     4. TypeError: Bar is not a constructor,
 
 
 // const Foo = function(){
@@ -109,10 +109,10 @@
 //
 // console.log(Object.getPrototypeOf(obj) === Foo.prototype);
 // console.log(Object.getPrototypeOf(Foo) === Function.prototype);
-// console.log(Object.getPrototypeOf(Function.prototype) === Object.prototype);
+// console.log(Object.getPrototypeOf(Function.prototype), Object.prototype);
 // 1. true, false, true,
 //     2. false, false, true,
-//     3. true, true, true, +
+//     3. true, true, true,
 //     4. true, false, false,
 
 
@@ -135,7 +135,7 @@
 // console.log(employee.getName2());
 // 1. 5, 'Bob', 'Bob', 'Bob',
 //     2. 5, 'Bob', 'Bob', undefined
-// 3. undefined, 'Bob', 'Bob', 'Bob' +
+// 3. undefined, 'Bob', 'Bob', 'Bob'
 // 4. undefined, 'Bob', 'Bob', undefined
 
 
@@ -158,7 +158,8 @@
 // 1. 1,
 //     2. 1, 2,
 //     3. 3,
-//     4. 3, 4, +
+//     4. 3, 4,
+
 
 
 
@@ -170,7 +171,8 @@
 // Promise.race(promises)
 //     .then(result => console.log(result))
 //     .catch(error => console.log(error));
-// 1. 1, +
+// console.log(promise1, promise3)
+// 1. 1,
 //     2. 2,
 //     3. [1, 4],
 //     4. [2, 3],
@@ -192,7 +194,11 @@
 //     }
 //     return result;
 // }
-//
+// function transformToMirror(arr) {     frcneeel amen a verjine chverdznelovv... exm 12321
+//     let copy = arr
+//     copy.pop()
+//     return [...arr, ...copy.reverse()]
+// }
 // let arr = [1, 2, 3, 4];
 // let result = transformToMirror(arr);
 // console.log(result); // [1, 2, 3, 4, 3, 2, 1]

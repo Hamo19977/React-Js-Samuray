@@ -8,7 +8,7 @@
 // console.log(name);
 // 1. ReferenceError: Cannot access 'name' before initialization,
 //     2. 'A', 'A',
-//     3. undefined, 'A',  +
+//     3. undefined, 'A',
 //     4. undefined, 'C',
 //     5. 'B', 'A',
 
@@ -26,7 +26,7 @@
 // 1. 'hello', 'hello',
 //     2. 'hello', undefined
 // 3. 'hello',
-//     4. undefined,  +
+//     4. undefined,
 
 
 
@@ -44,7 +44,7 @@
 //     2. 'Alice', ReferenceError: name is not defined,
 //     3. 'Alice', 'Alice',
 //     4. 'Alice, 'undefined',
-// 5. undefined', undefined,  +
+// 5. undefined', undefined,
 
 // const add = x => x + x;
 // function myFunc(num = 2, value = add(num)) {
@@ -52,7 +52,7 @@
 // }
 // myFunc();
 // myFunc(3);
-// 1. 2, 4 and 3, 6,  +
+// 1. 2, 4 and 3, 6,
 //     2. 2, NaN and 3, NaN,
 //     3. ReferenceError: num is not defined
 // 4. 2, 4 and 2, 4,
@@ -77,7 +77,7 @@
 // 1. 'pen', undefined, 'book', 'book',
 //     2. undefined, undefined, 'book', 'book',
 //     3. undefined, undefined, 'book', undefined,
-//     4. 'pen', undefined, 'book', undefined,  +
+//     4. 'pen', undefined, 'book', undefined,
 //     5. undefined, undefined, undefined, undefined,
 
 
@@ -95,19 +95,19 @@
 // console.log(person);
 // 1. { name: "Sarah", age: 22 },
 // 2. { name: "Sarah", age: 23 },
-// 3. { name: "Lydia", age: 22 },  +
+// 3. { name: "Lydia", age: 22 },
 // 4. { name: "Lydia", age: 23 },
 
 
-class Person {
-    constructor(name) {
-        this.name = name;
-    }
-    getName() {
-        return this.name;
-    }
-}
-
+// class Person {
+//     constructor(name) {
+//         this.name = name;
+//     }
+//     getName() {
+//         return this.name;
+//     }
+// }
+//
 // class Employee extends Person {
 //     getName = () => {
 //         return this.name;
@@ -120,7 +120,7 @@ class Person {
 // console.log(employee.getName());
 // console.log(employee.hasOwnProperty('getName'));
 // 1. 'Alice', false, undefined, true,
-//     2. 'Alice', false, 'Bob', true,  +
+//     2. 'Alice', false, 'Bob', true,
 //     3. 'Alice', true, undefined, true,
 //     4. 'Alice', true, 'Bob', true,
 
@@ -129,8 +129,8 @@ class Person {
 //     this.name = 'Nick';
 // }
 // const obj = new Foo();
-// console.log(Object.getPrototypeOf(obj) === Foo); class/object - function
-// console.log(Object.getPrototypeOf(obj) === Object.getPrototypeOf(Foo)); class/object - function
+// console.log(Object.getPrototypeOf(obj) === Foo);
+// console.log(Object.getPrototypeOf(obj) === Object.getPrototypeOf(Foo));
 //     console.log(Object.getPrototypeOf(obj) === Foo.prototype);
 // 1. true, false, false,
 //     2. true, true, true,
@@ -149,7 +149,7 @@ class Person {
 //     await Promise.resolve();
 // })();
 // console.log('end');
-// 1. 'start', 'debugger-1', 'debugger-2', 'end',  ++
+// 1. 'start', 'debugger-1', 'debugger-2', 'end',
 //     2. 'start', 'end', 'debugger-1', 'debugger-2',
 //     3. 'start', 'end', 'debugger-2', 'debugger-1',
 //     4. 'debugger-1', 'debugger-2', 'start', 'end',
@@ -171,7 +171,7 @@ class Person {
 //     .then(result => {
 //         console.log(result);
 //     });
-// 1. 1, 4  +
+// 1. 1, 4
 // 2. 1,
 //     3. 2,
 //     4. 2, 4,
@@ -189,14 +189,14 @@ class Person {
 // 1. [1,2],
 //     2. [1,2,3],
 //     3. [],
-//     4. 4,  +
+//     4. 4,
 
 // // Examples
 // foo(["apple", "banana", "cherry", "date"]) --> 5
 // // Note: The output is 5 because the shortest string in the array is "apple", // whi
 // ch has a length of 5
 
-// const fruits = ["apple", "banana", "cherry", "date"];
+// const fruits = ["app", "banana", "ch", "date"];
 //
 // function shortestStringLength(strings) {
 //     if (strings.length === 0) return 0
@@ -207,3 +207,9 @@ class Person {
 // }
 //
 // console.log(shortestStringLength(fruits))
+
+
+// let array = [1,4,5,2,4,5,7,99];
+//
+//
+// console.log([...array].map(array.pop,array))
